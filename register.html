@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registriation</title>
+</head>
+<body>
+
+   <form action="register" method="post">
+
+
+       <input type="text" name="first name" PLACEHOLDER="FIRST NAME"><br>
+       <input type="text" name="second name" PLACEHOLDER="second NAME"><br>
+       <input type="text" name="username" PLACEHOLDER="USERNAME"><br>
+       <input type="email" name="EMAIL" PLACEHOLDER="EMAIL"><br>
+       <input type="password" name="password" PLACEHOLDER="PASSWORD"><br>
+       <input type="confirm password" name="password1 " PLACEHOLDER="password1"><br>
+       <input type="submit">
+
+   </form>
+   <div>
+       {% for message in messages %}
+       <h3>{{message}}</h3>
+       {% endfor %}
+   </div>
+</body>
+</html>
